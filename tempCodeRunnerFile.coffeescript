@@ -1,0 +1,16 @@
+import requests
+
+# Your deployed URL
+url = "https://demo-vercel-yt-git-main-ands-projects-4fd20561.vercel.app/menu"
+
+# Data to send in the request
+data = {
+    "message": "monday dinner"
+}
+
+# Send the POST request
+response = requests.post(url, json=data)
+
+# Print the response from the server
+print("Status Code:", response.status_code)
+print("Response Text:", response.text)

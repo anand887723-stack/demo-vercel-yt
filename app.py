@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
 # from twilio.twiml.messaging_response import MessagingResponse
 import data_loader
-
+from flask_cors import CORS
 app = Flask(__name__)
-
+CORS(app)  
 
 @app.route('/', methods=['GET'])
 def home():
