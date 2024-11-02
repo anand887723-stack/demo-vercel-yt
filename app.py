@@ -1,6 +1,6 @@
 from flask import Flask, request
-# from twilio.twiml.messaging_response import MessagingResponse
-# import data_loader
+from twilio.twiml.messaging_response import MessagingResponse
+import data_loader
 
 app = Flask(__name__)
 
@@ -10,10 +10,11 @@ def home():
     return "ki chol che anand bhai "
 
 
-# @app.route('/whatsapp', methods=['POST'])
-# def whatsapp_reply():
-#     incoming_msg = request.values.get('Body', '').lower()
-#     print(incoming_msg)
+@app.route('/whatsapp', methods=['POST'])
+def whatsapp_reply():
+    incoming_msg = request.values.get('Body', '').lower()
+    print(incoming_msg)
+    return "okay whatsapp connmected "
 
 
 #     response = MessagingResponse()
