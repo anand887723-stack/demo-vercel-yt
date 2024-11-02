@@ -1,6 +1,6 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-import data_loader
+# import data_loader
 
 app = Flask(__name__)
 
