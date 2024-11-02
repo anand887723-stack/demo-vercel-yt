@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
-    return "Welcome to the WhatsApp Bot Server!"
+    return "ki chol che anand bhai "
 
 
 @app.route('/whatsapp', methods=['POST'])
