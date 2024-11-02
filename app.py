@@ -4,6 +4,12 @@ import data_loader
 
 app = Flask(__name__)
 
+
+@app.route('/', methods=['GET'])
+def home():
+    return "Welcome to the WhatsApp Bot Server!"
+
+
 @app.route('/whatsapp', methods=['POST'])
 def whatsapp_reply():
     incoming_msg = request.values.get('Body', '').lower()
@@ -12,6 +18,7 @@ def whatsapp_reply():
 
     response = MessagingResponse()
     message = response.message()
+    return "hello "
     # print(incoming_msg)
 
 
