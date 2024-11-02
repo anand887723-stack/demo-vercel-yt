@@ -10,11 +10,11 @@ def home():
     return "ki chol che anand bhai "
 
 
-# @app.route('/whatsapp', methods=['POST'])
-# def whatsapp_reply():
-#     incoming_msg = request.values.get('Body', '').lower()
-#     print(incoming_msg)
-#     return "okay whatsapp connmected "
+@app.route('/whatsapp', methods=['POST'])
+def whatsapp_reply():
+    incoming_msg = request.values.get('Body', '').lower()
+    print(incoming_msg)
+    return "okay nice  "
 
 
 #     response = MessagingResponse()
