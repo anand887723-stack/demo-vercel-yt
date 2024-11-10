@@ -30,9 +30,9 @@ day_column_map = {
 # Map meal types to row ranges (0-indexed)
 meal_row_map = {
     'breakfast': range(3, 11),   # Row 5 to Row 11 (0-indexed)
-    'lunch': range(12, 22),      # Row 13 to Row 22 (0-indexed)
+    'lunch': range(11, 22),      # Row 13 to Row 22 (0-indexed)
     'snacks': range(22, 26),     # Row 24 to Row 26 (0-indexed)
-    'dinner': range(27, 38)      # Row 28 to Row 39 (0-indexed)
+    'dinner': range(26, 38)      # Row 28 to Row 39 (0-indexed)
 }
 
 def get_menu(day, meal):
